@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Global Fuel Prices and Taxation Trends 2020–2026: explore petrol, diesel, country comparisons, and taxation context through interactive Tableau dashboards and stories.">
+  <title>Global Fuel Prices and Taxation Trend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="nav container">
+    <a class="brand" href="#home"><span class="brand-icon">↗</span><span>FUEL<span class="brand-muted">SCOPE</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#comparison">Petrol vs Diesel</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#story">Story</a>
+    </nav>
+    <a class="nav-cta" href="#dashboard">Explore data <span>↘</span></a>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> GLOBAL ENERGY DATA · 2020–2026</div>
+        <h1>Global Fuel Prices<br>and <span>Taxation Trend</span></h1>
+        <p class="hero-text">Understanding global petrol and diesel prices, taxation, and how fuel costs change across countries over time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#dashboard">Explore dashboard <span>↘</span></a>
+          <a class="button button-secondary" href="#comparison">Compare fuels <span>↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">ⓘ</span> Interactive visualisations powered by Tableau Public.</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative fuel price trend illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="fuel-card">
+          <div class="card-top"><span>FUEL PRICE INDEX</span><span class="live-dot">● TABLEAU DATA</span></div>
+          <div class="chart-label">Global trend <span>2020 — 2026</span></div>
+          <svg class="trend-chart" viewBox="0 0 440 180" role="img" aria-label="Decorative trend line">
+            <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b6f36a" stop-opacity=".3"/><stop offset="100%" stop-color="#b6f36a" stop-opacity="0"/></linearGradient></defs>
+            <g class="grid-lines"><path d="M0 30H440 M0 70H440 M0 110H440 M0 150H440"/></g>
+            <path class="chart-area" d="M0 142 C35 132 42 110 75 118 S120 90 150 105 S195 54 225 78 S270 42 300 58 S345 24 375 44 S410 16 440 10 L440 180 L0 180Z"/>
+            <path class="chart-line" d="M0 142 C35 132 42 110 75 118 S120 90 150 105 S195 54 225 78 S270 42 300 58 S345 24 375 44 S410 16 440 10"/>
+            <circle cx="375" cy="44" r="5" class="chart-point"/><circle cx="440" cy="10" r="5" class="chart-point"/>
+          </svg>
+          <div class="chart-foot"><span>GLOBAL PRICE MOVEMENT</span><span class="trend-up">Explore the live charts below ↓</span></div>
+        </div>
+        <div class="floating-tag tag-petrol"><span class="tag-dot petrol-dot"></span> PETROL</div>
+        <div class="floating-tag tag-diesel"><span class="tag-dot diesel-dot"></span> DIESEL</div>
+        <div class="hero-number"><strong>2020–26</strong><span>Trend window</span></div>
+      </div>
+    </section>
+
+    <section class="stats container" id="overview">
+      <article class="stat"><span class="stat-number">01</span><div><h3>Price trends</h3><p>Explore changes over time.</p></div></article>
+      <article class="stat"><span class="stat-number">02</span><div><h3>Country comparison</h3><p>Compare prices across countries.</p></div></article>
+      <article class="stat"><span class="stat-number">03</span><div><h3>Taxation context</h3><p>Investigate tax and price patterns.</p></div></article>
+    </section>
+
+    <section class="section container" id="comparison">
+      <div class="section-heading">
+        <div><div class="eyebrow">TWO FUELS · DIFFERENT STORIES</div><h2>Petrol <span class="amp">&</span> Diesel</h2></div>
+        <p>Compare the two fuels and use the interactive Tableau views to explore real values from the project dataset.</p>
+      </div>
+      <div class="fuel-grid">
+        <article class="fuel-panel petrol-panel">
+          <div class="fuel-panel-head"><span class="fuel-symbol">P</span><span class="mini-label">FUEL TYPE 01</span></div>
+          <h3>Petrol</h3>
+          <p>Explore petrol price movements, country-level differences, and how taxation and market conditions may influence retail prices.</p>
+          <div class="fuel-questions"><span>Explore</span><span>Price over time</span><span>Country differences</span></div>
+          <div class="fuel-graphic petrol-graphic"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </article>
+        <article class="fuel-panel diesel-panel">
+          <div class="fuel-panel-head"><span class="fuel-symbol">D</span><span class="mini-label">FUEL TYPE 02</span></div>
+          <h3>Diesel</h3>
+          <p>Compare diesel with petrol and explore possible differences linked to demand, supply, policy, and taxation.</p>
+          <div class="fuel-questions"><span>Explore</span><span>Petrol vs diesel</span><span>Tax patterns</span></div>
+          <div class="fuel-graphic diesel-graphic"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </article>
+      </div>
+      <p class="disclaimer">Note: The decorative graphic above is illustrative. Use the Tableau dashboard and its data source for actual values and findings.</p>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">INTERACTIVE DATA EXPLORER</div><h2>Global Fuel Price <span class="amp">Dashboard</span></h2></div>
+          <p>Explore the published dashboard below. Use Tableau’s toolbar and filters to interact with the visualisation.</p>
+        </div>
+        <div class="embed-note"><span class="note-icon">↗</span> Published from Tableau Public · Dashboard view</div>
+        <div class="tableau-shell">
+          <div class="tableauPlaceholder" id="fuelDashboard">
+            <noscript><a href="https://public.tableau.com/views/GlobalFuelPricesandTaxationTrends20202026_17933937215950/GlobalFuelPricesDashboard"><img alt="Global Fuel Prices Dashboard" src="https://public.tableau.com/static/images/Gl/GlobalFuelPricesandTaxationTrends20202026_17933937215950/GlobalFuelPricesDashboard/1_rss.png" style="border:0;width:100%"></a></noscript>
+            <object class="tableauViz" style="display:none;">
+              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+              <param name="embed_code_version" value="3">
+              <param name="site_root" value="">
+              <param name="name" value="GlobalFuelPricesandTaxationTrends20202026_17933937215950/GlobalFuelPricesDashboard">
+              <param name="tabs" value="yes">
+              <param name="toolbar" value="yes">
+              <param name="static_image" value="https://public.tableau.com/static/images/Gl/GlobalFuelPricesandTaxationTrends20202026_17933937215950/GlobalFuelPricesDashboard/1.png">
+              <param name="animate_transition" value="yes">
+              <param name="display_static_image" value="yes">
+              <param name="display_spinner" value="yes">
+              <param name="display_overlay" value="yes">
+              <param name="display_count" value="yes">
+              <param name="language" value="en-US">
+            </object>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="story">
+      <div class="section-heading">
+        <div><div class="eyebrow">FOLLOW THE FINDINGS</div><h2>Global Fuel Price <span class="amp">Story</span></h2></div>
+        <p>Follow the story view for a guided sequence of visualisations and key observations.</p>
+      </div>
+      <div class="embed-note"><span class="note-icon">↗</span> Published from Tableau Public · Story view</div>
+      <div class="tableau-shell story-shell">
+        <div class="tableauPlaceholder" id="fuelStory">
+          <noscript><a href="https://public.tableau.com/shared/Q9DQXR2PW"><img alt="Global Fuel Prices Tableau Story" src="https://public.tableau.com/static/images/Q9/Q9DQXR2PW/1.png" style="border:0;width:100%"></a></noscript>
+          <object class="tableauViz" style="display:none;">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+            <param name="embed_code_version" value="3">
+            <param name="site_root" value="">
+            <param name="path" value="shared/Q9DQXR2PW">
+            <param name="toolbar" value="yes">
+            <param name="static_image" value="https://public.tableau.com/static/images/Q9/Q9DQXR2PW/1.png">
+            <param name="animate_transition" value="yes">
+            <param name="display_static_image" value="yes">
+            <param name="display_spinner" value="yes">
+            <param name="display_overlay" value="yes">
+            <param name="display_count" value="yes">
+            <param name="language" value="en-US">
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing container">
+      <div><div class="eyebrow">FROM DATA TO INSIGHT</div><h2>See the story behind<br>the price at the pump.</h2></div>
+      <a class="button button-primary" href="#dashboard">Explore the data ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span class="brand-icon">↗</span><span>FUEL<span class="brand-muted">SCOPE</span></span></a><span>Global Fuel Prices and Taxation Trend · 2020–2026</span><a href="#home">Back to top ↑</a></div>
+    <div class="container footer-small">Student data visualisation project · Interactive charts hosted by Tableau Public. Verify source data and units before drawing conclusions.</div>
+  </footer>
+
+  <script src="https://public.tableau.com/javascripts/api/viz_v1.js" async></script>
+  <script src="script.js"></script>
+</body>
+</html>
